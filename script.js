@@ -82,7 +82,7 @@ toggleVoiceBtn.addEventListener('click', () => {
 
 // AI-Based ASL Detection (TensorFlow.js Model for Gestures + Fallback to Letters)
 const hands = new Hands({
-    locateFile: (file) => https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/${file}
+    locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/${file}`
 });
 hands.setOptions({
     maxNumHands: 1,
