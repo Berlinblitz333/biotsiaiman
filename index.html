@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call with Captions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Video Call with Captions</h1>
+    <div id="video-container">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+    <div id="captions">Captions will appear here...</div>
+    <div id="controls">
+        <input type="text" id="roomId" placeholder="Enter Room ID (e.g., 123)">
+        <button id="joinCall">Join Call</button>
+        <button id="endCall">End Call</button>
+        <button id="toggleVoice">Toggle Voice-to-Text</button>
+        <button id="toggleSign">Toggle Sign-to-Text</button>
+    </div>
+    <!-- Free libraries -->
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
